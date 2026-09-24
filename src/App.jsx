@@ -3,6 +3,7 @@ import "./App.css";
 import Navbar from "./components/Navber";
 import Home from "./pages/Home";
 import Footer from "./components/Footer";
+import Register from "./pages/Register";
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
         <div className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
-            {/* <Route path="/register" element={<Register />} /> */}
+            <Route path="/register" element={<Register />} />
           </Routes>
         </div>
         <Footer />
