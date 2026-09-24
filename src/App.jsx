@@ -1,11 +1,17 @@
-
-import './App.css'
+import { BrowserRouter as Router,  } from "react-router-dom";
+import "./App.css";
+import Navbar from "./components/Navber";
+import Home from "./pages/Home";
 
 function App() {
-
   return (
-    <h1>Hello</h1>
-  )
+    <Router>
+      <div className="flex flex-col min-h-screen">
+        <Navbar />
+        
+      </div>
+    </Router>
+  );
 }
 
-export default App
+export default App;
